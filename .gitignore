@@ -70,6 +70,8 @@ $RECYCLE.BIN/
 # VS Code directories
 .vscode/
 .vscode-test/
+/.vs/
+/Clockapi/vs/
 
 # Rider settings
 .idea/
@@ -103,3 +105,4 @@ artifacts/
 /publish/
 *.pfx
 /pfx/
+
