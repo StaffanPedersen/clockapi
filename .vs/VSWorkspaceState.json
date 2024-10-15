@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Clockapi",
+    "\\Clockapi\\Contexts",
+    "\\Clockapi\\Controllers",
+    "\\Clockapi\\Interfaces",
+    "\\Clockapi\\Models",
+    "\\Clockapi\\Properties",
+    "\\Clockapi\\Service",
+    "\\Clockapi\\wwwroot"
+  ],
+  "SelectedNode": "\\clockapi.sln",
+  "PreviewInSolutionExplorer": false
+}

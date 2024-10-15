@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetEnv" Version="3.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.7" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.8.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Databases\clockapi.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Databases\additional.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="publish\" />
+    <Folder Include="Service\" />
+    <Folder Include="wwwroot\css\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="publish\web.config" />
+    <_ContentIncludedByDefault Remove="publish\appsettings.Development.json" />
+    <_ContentIncludedByDefault Remove="publish\appsettings.json" />
+    <_ContentIncludedByDefault Remove="publish\clockapi.deps.json" />
+    <_ContentIncludedByDefault Remove="publish\clockapi.runtimeconfig.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\publish\publish\web.config" />
+    <_ContentIncludedByDefault Remove="publish\publish\publish\web.config" />
+    <_ContentIncludedByDefault Remove="publish\publish\web.config" />
+    <_ContentIncludedByDefault Remove="publish\publish\appsettings.Development.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\appsettings.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\clockapi.deps.json" />
+    <_ContentIncludedByDefault Remove="publish\clockapi.runtimeconfig.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\publish\appsettings.Development.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\publish\appsettings.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\publish\clockapi.deps.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\publish\clockapi.runtimeconfig.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\publish\publish\appsettings.Development.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\publish\publish\appsettings.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\publish\publish\clockapi.deps.json" />
+    <_ContentIncludedByDefault Remove="publish\publish\publish\publish\clockapi.runtimeconfig.json" />
+  </ItemGroup>
+
+</Project>
