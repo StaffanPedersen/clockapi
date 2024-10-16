@@ -23,7 +23,7 @@ namespace ClockApi.Controllers
                 await file.CopyToAsync(stream);
             }
 
-            return Ok(new { filePath, description, clientDate });
+            return Ok(new { fileName = file.FileName, description, clientDate });
         }
     }
 }
